@@ -152,76 +152,6 @@ Input: "Take me to Xyzland"
 Output: "I don't know if 'Xyzland' exists. Please check the spelling."
 ```
 
-## 🔌 API Endpoints
-
-### `GET /`
-Serves the main HTML page.
-
-### `POST /api/query`
-Process a tourism query.
-
-**Request:**
-```json
-{
-  "query": "I want to visit Paris"
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "place": "Paris",
-  "display_name": "Paris, Île-de-France, France",
-  "city_lat": 48.8566,
-  "city_lon": 2.3522,
-  "weather": {
-    "temperature": 18.5,
-    "humidity": 65,
-    "precipitation_probability": 20,
-    "wind_speed": 12.5,
-    "description": "Partly cloudy"
-  },
-  "places": [
-    {
-      "name": "Eiffel Tower",
-      "place_type": "attraction",
-      "lat": 48.8584,
-      "lon": 2.2945
-    }
-  ]
-}
-```
-
-### `POST /api/place-details`
-Get photos for a specific place.
-
-**Request:**
-```json
-{
-  "name": "Eiffel Tower",
-  "lat": 48.8584,
-  "lon": 2.2945,
-  "city": "Paris"
-}
-```
-
-**Response:**
-```json
-{
-  "success": true,
-  "name": "Eiffel Tower",
-  "lat": 48.8584,
-  "lon": 2.2945,
-  "photos": [
-    {
-      "url": "https://...",
-      "thumb": "https://...",
-      "source": "Wikipedia"
-    }
-  ]
-}
-```
 
 ## 🛠️ Technologies Used
 
@@ -257,9 +187,6 @@ Get photos for a specific place.
 - **Flying plane loading animation**
 - **Fully responsive** for all screen sizes
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -270,10 +197,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Font Awesome](https://fontawesome.com/) - Icons
 - [Google Fonts](https://fonts.google.com/) - Typography
 
-## 👤 Author
-
-Built with ❤️ for travelers worldwide
-
----
-
-**Happy Travels! ✈️🌍**

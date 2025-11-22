@@ -2,10 +2,6 @@
 
 A multi-agent tourism system that helps you plan your trips by providing weather information, tourist attractions, photos, and Google Maps integration for any destination worldwide.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
 ## 🌟 Features
 
 - **🔍 Smart Destination Search** - Enter any city or place name to explore
@@ -163,8 +159,8 @@ Output: "I don't know if 'Xyzland' exists. Please check the spelling."
 
 ### Frontend
 - **HTML5** - Structure
-- **CSS3** - Styling with modern features (glassmorphism, gradients, animations)
-- **JavaScript (ES6+)** - Interactivity
+- **CSS3** - Styling with modern features
+- **JavaScript ** - Interactivity
 - **Font Awesome** - Icons
 - **Google Fonts** - Typography (Playfair Display, Poppins)
 
@@ -188,7 +184,7 @@ Output: "I don't know if 'Xyzland' exists. Please check the spelling."
 - **Fully responsive** for all screen sizes
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [OpenStreetMap](https://www.openstreetmap.org/) - Map data
 - [Open-Meteo](https://open-meteo.com/) - Free weather API

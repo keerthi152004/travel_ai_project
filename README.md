@@ -2,6 +2,7 @@
 
 A multi-agent tourism system that helps you plan your trips by providing weather information, tourist attractions, photos, and Google Maps integration for any destination worldwide.
 
+
 ## 🌟 Features
 
 - **🔍 Smart Destination Search** - Enter any city or place name to explore
@@ -64,10 +65,10 @@ This project implements a **Multi-Agent System** with the following agents:
 
 ```
 wanderlust/
-├── app.py              # Streamlit app with all agents
-├── index.html          # Frontend HTML (optional, for reference)
-├── styles.css          # Additional CSS styles (optional)
-├── script.js           # Frontend JavaScript (optional, for reference)
+├── app.py              # Flask backend with all agents
+├── index.html          # Frontend HTML
+├── styles.css          # Stylesheet (modern travel theme)
+├── script.js           # Frontend JavaScript
 ├── requirements.txt    # Python dependencies
 └── README.md           # Project documentation
 ```
@@ -88,7 +89,7 @@ wanderlust/
    cd wanderlust
    ```
 
-2. **Save all project files** (`app.py`, `requirements.txt`, `README.md`) into the folder
+2. **Save all project files** (`app.py`, `index.html`, `styles.css`, `script.js`, `requirements.txt`) into the folder
 
 3. **Create a virtual environment** (recommended)
    ```bash
@@ -108,36 +109,12 @@ wanderlust/
 
 5. **Run the application**
    ```bash
-   streamlit run app.py
+   python app.py
    ```
 
 6. **Open your browser**
    ```
-   http://localhost:8501
-   ```
-
-## ☁️ Deploy to Streamlit Cloud
-
-1. **Push your code to GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/wanderlust.git
-   git push -u origin main
-   ```
-
-2. **Deploy on Streamlit Cloud**
-   - Go to [share.streamlit.io](https://share.streamlit.io)
-   - Click "New app"
-   - Connect your GitHub repository
-   - Select `app.py` as the main file
-   - Click "Deploy"
-
-3. **Your app will be live at:**
-   ```
-   https://YOUR_APP_NAME.streamlit.app
+   http://localhost:5000
    ```
 
 ## 💡 Usage Examples
@@ -172,17 +149,21 @@ Input: "Take me to Xyzland"
 Output: "I don't know if 'Xyzland' exists. Please check the spelling."
 ```
 
+
 ## 🛠️ Technologies Used
 
 ### Backend
 - **Python 3.8+** - Programming language
-- **Streamlit** - Web framework for data apps
+- **Flask** - Web framework
 - **Requests** - HTTP library for API calls
+- **Flask-CORS** - Cross-origin resource sharing
 
-### Frontend (Built into Streamlit)
-- **Streamlit Components** - UI elements
-- **Custom CSS** - Styling
-- **HTML/Markdown** - Content rendering
+### Frontend
+- **HTML5** - Structure
+- **CSS3** - Styling with modern features (glassmorphism, gradients, animations)
+- **JavaScript (ES6+)** - Interactivity
+- **Font Awesome** - Icons
+- **Google Fonts** - Typography (Playfair Display, Poppins)
 
 ### External APIs
 - **Nominatim** - Geocoding (OpenStreetMap)
@@ -196,14 +177,13 @@ Output: "I don't know if 'Xyzland' exists. Please check the spelling."
 ## 🎨 UI Features
 
 - **Travel-themed design** with warm orange/amber color palette
+- **Animated floating icons** (plane, globe, suitcase, passport)
 - **Glass-morphism cards** with backdrop blur
+- **Smooth hover animations** and transitions
 - **Quick destination suggestions** (Paris, Tokyo, New York, Dubai, Bali)
-- **Expandable attraction cards** with maps and photos
+- **Flying plane loading animation**
 - **Fully responsive** for all screen sizes
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -211,9 +191,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Open-Meteo](https://open-meteo.com/) - Free weather API
 - [Unsplash](https://unsplash.com/) - Beautiful photos
 - [Wikipedia](https://www.wikipedia.org/) - Place information and images
-- [Streamlit](https://streamlit.io/) - Amazing web framework
+- [Font Awesome](https://fontawesome.com/) - Icons
+- [Google Fonts](https://fonts.google.com/) - Typography
 
-
----
 
 **Happy Travels! ✈️🌍**
